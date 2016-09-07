@@ -1,0 +1,30 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #00FFFF
+}
+@font-face {
+    font-family: Avenir;
+    src:url('#{$avenir-path}AvenirLTStd-Light.woff') format('woff');
+}
+.Title {
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 0;
+    text-align: center;
+    background-color: grey;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.Title h1 {
+    margin: 0;
+    color: white;
+    font-size: 400%;
+    font-family: Avenir;
+}
+.Links{
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 0;
+    background-color:
+}
