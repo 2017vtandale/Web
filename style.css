@@ -1,0 +1,45 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #00FFFF;
+    height: 100%;
+}
+@font-face {
+    font-family: Avenir;
+    src:url('#{$avenir-path}AvenirLTStd-Light.woff') format('woff');
+}
+@font-face {font-family: 'BrandonGrotesque-Bold';src: url('webfonts/1D04E6_0_0.eot');src: url('webfonts/1D04E6_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/1D04E6_0_0.woff') format('woff'),url('webfonts/1D04E6_0_0.ttf') format('truetype');}
+@font-face {font-family: 'BrandonGrotesque-Regular';src: url('webfonts/1D04E6_A_0.eot');src: url('webfonts/1D04E6_A_0.eot?#iefix') format('embedded-opentype'),url('webfonts/1D04E6_A_0.woff') format('woff'),url('webfonts/1D04E6_A_0.ttf') format('truetype');}
+.Title {
+    width:95%;
+    margin-left:25px;
+    padding: 0;
+    text-align: center;
+    background-color: grey;
+    border-radius: 10px;
+}
+head-center {
+    margin: 0;
+    color: white;
+    font-size: 200%;
+    font-family: Avenir;
+}
+.Links{
+    position: absolute;
+    height:100%;
+    width:95%;
+    padding: 0;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color:rgb(100, 150,200);
+    border-radius: 10px;
+}
+.Links li{
+    font-size:100%;
+    font-family: BrandonGrotesque-Regular;
+}
+.Links .AName{
+    font-weight: bold;
+    font-family: BrandonGrotesque-Bold;
+    color:white;
+}
