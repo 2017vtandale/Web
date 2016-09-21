@@ -16,5 +16,5 @@ export class LabsComponent {
   Lablist: labs[]= [
     {Name:"My First Lab",link:"../Lab0_Content/index.html", num:0}
   ];
-  console.log(labs);
+
 }

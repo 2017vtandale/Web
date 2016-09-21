@@ -5,9 +5,10 @@ import { labs } from './labs';
   template: `
   <div class="Title">
         <h1>Vishal Tandale Web Labs</h1>
+
     </div>
     <div class="Links">
-        <labs-list></labs-list>
+        <labs-list>Loading..</labs-list>
     </div>
   `
 })

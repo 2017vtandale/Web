@@ -1,24 +1,60 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Forms</title>
-<link rel="stylesheet" href="style.css">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
+
 <body>
-  <form class="Form" autocomplete="on">
-    User Name:<br>
-    <input type="text" name="Username" placeholder="Username"/><br>
-    City:<br>
-    <input type="text" name="City" placeholder="City" /><br>
-    State:<br>
-    <input type="text" name="State" placeholder="State"/><br>
-    Zip:<br>
-    <input type="text" name="Zip" maxlength="5" placeholder="Zip"/><br>
-    E-mail:<br>
-    <input type="url" name="E-mail" placeholder="Email"/><br>
-    Date of Survey:<br>
-    <input type="date" name="Date of Survey" placeholder="00/00/0000"/><br>
-    <input type="submit" value="Submit">
-  </form>
+    <div class = "Title">
+        <h1>User Information</h1>
+    </div>
+    <form class="Form" autocomplete="on">
+        <div class="inputs">
+            User Name:
+            <br>
+            <input type="text" name="Username" placeholder="Username" required autofocus/>
+            <br> City:
+            <br>
+            <input type="text" name="City" placeholder="City" required/>
+            <br> State:
+            <br>
+            <input type="text" name="State" placeholder="State" required/>
+            <br> Zip:
+            <br>
+            <input type="number" name="Zip" maxlength="5" placeholder="00000" min="00000" max="99999" required/>
+            <br> E-mail:
+            <br>
+            <input type="email" name="E-mail" placeholder="user@example.com" required/>
+            <br> Date of Survey:
+            <br>
+            <input type="date" name="Date of Survey" placeholder="00-00-0000" required/>
+            <br>
+        </div>
+        <div class="Submit">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+    <div class = "Form RBox">
+        <form id = "RadioBox">
+            <input type = "radio" name="viewtype" value="dropdown" id ="Dropped" checked/>Dropdown<br />
+            <input type = "radio" name="viewtype" value="lists" id = "Listbut" />List View<br />
+        </form>
+        <select id = "selectType"></select><br />
+        <select id = "ConcequenceType"></select>
+    </div>
+    <div class = "Listview">
+        <select id ="selectListType"></select><br />
+        <select id = "ConcequenceListType"></select>
+    </div>
+    <div class="link-home">
+        <p>
+            <a href="../index.html">Home Page</a>
+        </p>
+    </div>
+    <script src = "main.js"></script>
 </body>
+
 </html>

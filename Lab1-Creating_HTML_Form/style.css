@@ -1,3 +1,40 @@
-.Form input{
-  border-radius: 6px;
+@font-face {
+    font-family: Avenir;
+    src:url('#{$avenir-path}AvenirLTStd-Light.woff') format('woff');
+}
+
+.Title {
+    size:300%;
+    color: #0e345c;
+    text-align: center;
+    font-family: BrandonGrotesque-Bold;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+}
+.Form .inputs input {
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+    padding: 12px 20px;
+    border: 2px #ccc;
+    box-sizing: border-box;
+    font-family: Avenir;
+}
+.Form .Submit input {
+    width: 25%;
+    background-color: rgb(93, 119, 231);
+    border: 0;
+    border-radius: 5px;
+    padding: 14px 20px;
+    color: white;
+    margin: auto;
+}
+.Form .Submit input:hover {
+    background-color: rgb(46, 73, 189);
+}
+.Rbox{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+html, body {
+    background-color: rgb(245, 245, 245);
 }
