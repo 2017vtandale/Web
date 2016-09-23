@@ -34,9 +34,10 @@ head-center {
     background-color:rgb(100, 150,200);
     border-radius: 10px;
 }
-.Links li{
+.Links{
     font-size:100%;
     font-family: BrandonGrotesque-Regular;
+    padding-left: 50px;
 }
 .Links .AName{
     font-weight: bold;
