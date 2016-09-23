@@ -4,7 +4,7 @@ import { labs } from './labs';
   selector: 'head-center',
   template: `
   <div class="Title">
-        <h1>Vishal Tandale Web Labs</h1>
+        <h1>Vishal Tandale Web Labs Testing Changes</h1>
 
     </div>
     <div class="Links">
