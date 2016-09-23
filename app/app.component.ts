@@ -10,7 +10,7 @@ import { labs } from './labs';
     <div class="Links">
         <ol>
           <li><a href = "./Lab0_Content/Lab00.html">Lab 0 Content</a></li>
-          <li><a href = "./Lab1-Creating_HTML_Form">Lab 1 Content</a></li>
+          <li><a href = "./Lab1-Creating_HTML_Form">Lab 1 Forms</a></li>
         </ol>
     </div>
   `
