@@ -3,7 +3,7 @@
 <head>
   <title>Lab2-Quiz Game</title>
   <link rel="stylesheet" href="style.css">
-  <script src = "../moment.js"></script>
+  <script src = "./moment.js"></script>
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
@@ -14,8 +14,10 @@
 <div class ="Quiz Section">
    <div class ="Timer">
       <p id = "Timer"></p>
-      <button id = "Start">Start</button>
+      <button id = "Start">Restart</button>
       <button id = "Pause">Pause</button>
+      <button id = "Unpause">UnPause</button>
+      <button id = "Stop">Stop</button>
    </div>
    <div class ="Fill-in">
     <table id="Table">
@@ -24,7 +26,9 @@
    </div>
 </div>
 <div class = "Stats">
-  <button id ="Submit">Submit</button>
+  <p id = "Score">
+    Curr Score: 0
+  </p>
 </div>
 <script src = "main.js"></script>
 </body>
