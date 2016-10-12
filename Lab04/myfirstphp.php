@@ -8,7 +8,7 @@
     <?php
       echo("<input id='toOutput' />");
      ?>
-    <button id ="ChangeStuff"></button>
+    <button id ="ChangeStuff">Click Me</button>
     <div id="outputDIV">
 
     </div>
