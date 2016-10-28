@@ -1,0 +1,9 @@
+html, body {
+  background-color: #AFFFB1;
+}
+.Changer{
+  width:50px;
+  height:50px;
+  border: 5px dotted black;
+  background-color: #AFFFB1;
+}
