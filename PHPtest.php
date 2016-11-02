@@ -1,10 +1,6 @@
 <?php
-  //instantiate database
-  //create a table try/catch
-  //add some data
-  //query our table
   $host ="host = ec2-184-72-240-189.compute-1.amazonaws.com";
-  $dbname="dbname = dcneg2tjgbcblv";
+  $dbname="dcneg2tjgbcblv";
   $user ="user = qpqqhnjarylryo";
   $port ="port 5432";
   $password ="password = hdGBdKUpo5ei2l5OGk-n0iFnMn";
