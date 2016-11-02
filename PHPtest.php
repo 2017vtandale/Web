@@ -4,7 +4,7 @@
   $user ="user = qpqqhnjarylryo";
   $port ="port 5432";
   $password ="password = hdGBdKUpo5ei2l5OGk-n0iFnMn";
-  $db = PE_connect($host." ".$dbname." ".$user." ".$port." ".$password)
+  $db = PE_connect($host." ".$dbname." ".$user." ".$port." ".$password);
 
   $query <<<ESCAPED
     CREATE TABLE football(
