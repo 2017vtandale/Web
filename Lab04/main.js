@@ -29,4 +29,4 @@ function Check(){
   Playertext.textContent = "Player "+ (Player+1)+" turn";
 
 }
-input.addEventListener("keydown", Check, false);
+input.addEventListener("keyup", Check, false);
