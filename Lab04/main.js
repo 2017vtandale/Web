@@ -15,6 +15,8 @@ function Check(){
         }}
         xhttp.open("GET", "https://vtandale-testapp.herokuapp.com/Lab04/Ghost.php?query=" + currword, true);
         xhttp.send();
+  console.log(numw);
+  console.log(parseInt(numw));
   console.log(numw==="0");
   if(numw<1){
     console.log("L's");
