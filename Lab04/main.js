@@ -5,6 +5,7 @@ var Losingtext = document.getElementById('Lose-T');
 Playertext.value = "Player "+ (Player+1)+" turn";
 function Check(){
   var currword = input.value;
+  console.log(currword);
   var numw;
   var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -12,7 +13,7 @@ function Check(){
           numw = this.responseText;
           console.log(numw);
         }}
-        xhttp.open("GET", "https://vtandale-testapp.herokuapp.com/Lab04/Ghost.php?query=" + input.value, true);
+        xhttp.open("GET", "https://vtandale-testapp.herokuapp.com/Lab04/Ghost.php?query=" + currword, true);
         xhttp.send();
 
   if(numw<0){
