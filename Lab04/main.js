@@ -34,4 +34,4 @@ function Check() {
     xhttp.send();
 
 }
-input.addEventListener("change", Check, false);
+input.addEventListener("input", Check, false);
