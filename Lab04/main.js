@@ -55,7 +55,7 @@ function isAlphabet(e, t) {
             return true;
         else{
             input.value = oldcurrword;
-            input.textContent = currword;
+            input.textContent = oldcurrword;
             return false;
         }
     } catch (err) {
