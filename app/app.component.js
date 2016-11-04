@@ -15,7 +15,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'head-center',
-            template: "\n  <div class=\"Title\">\n        <h1>Vishal Tandale Web Labs</h1>\n\n    </div>\n    <div class=\"Links\">\n          <p><a href = \"./Lab0_Content/Lab00.html\">Lab 0 Content</a></p>\n          <p><a href = \"./Lab1-Creating_HTML_Form\">Lab 1 Forms</a></p>\n          <p><a href = \"./Lab2-Quiz-Game\">Lab 2 Quiz Game</a></p>\n    </div>\n  "
+            template: "\n  <div class=\"Title\">\n        <h1>Vishal Tandale Web Labs</h1>\n\n    </div>\n    <div class=\"Links\">\n          <p><a href = \"./Lab0_Content/Lab00.html\">Lab 0 Content</a></p>\n          <p><a href = \"./Lab1-Creating_HTML_Form\">Lab 1 Forms</a></p>\n          <p><a href = \"./Lab2-Quiz-Game\">Lab 2 Quiz Game</a></p>\n          <p><a href = \"./Lab 3\">Lab 3 Autocorrect</a></p>\n          <p><a href = \"./Lab04/index.html\">Lab 4 Ghost</a></p>\n    </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

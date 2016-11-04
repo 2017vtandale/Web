@@ -11,6 +11,8 @@ import { labs } from './labs';
           <p><a href = "./Lab0_Content/Lab00.html">Lab 0 Content</a></p>
           <p><a href = "./Lab1-Creating_HTML_Form">Lab 1 Forms</a></p>
           <p><a href = "./Lab2-Quiz-Game">Lab 2 Quiz Game</a></p>
+          <p><a href = "./Lab 3">Lab 3 Autocorrect</a></p>
+          <p><a href = "./Lab04/index.html">Lab 4 Ghost</a></p>
     </div>
   `
 })
