@@ -20,8 +20,8 @@ function Check() {
                 Losingtext.textContent = "Thats not a word Player " + (Player + 1) + " loses. The Game Restarts";
                 input.value = "";
                 input.textContent = "";
-                Playertext.value = "Player " + (Player + 1) + " loses. It is "+ ((1-Player)+1) +" turn.";
-                Playertext.textContent = "Player " + (Player + 1) + " loses. It is "+ ((1-Player)+1) +" turn.";
+                Playertext.value = "\tPlayer " + (Player + 1) + " loses. It is Player "+ ((1-Player)+1) +" turn.";
+                Playertext.textContent = "\tPlayer " + (Player + 1) + " loses. It is "+ ((1-Player)+1) +" turn.";
                 Player = 1-Player;
             } else {
                 Player = 1 - Player;

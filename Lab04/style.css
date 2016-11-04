@@ -1,0 +1,16 @@
+html,body{
+  background-color: rgb(23, 160, 228);
+}
+h1{
+  text-align: center;
+  color:rgb(191, 13, 13);
+  size:400%;
+}
+input{
+  border-radius: 6px;
+  align-self: center;
+}
+.inputbar{
+  color:rgb(13, 74, 3);
+  text-align: center;
+}
