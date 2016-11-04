@@ -17,15 +17,17 @@ function Check() {
             //console.log(numw === "0");
             if (numw < 1) {
                 console.log("L's");
-                Losingtext.value = "Thats not a word Player " + (Player + 1) + " loses. The Game Restarts";
+                Losingtext.textContent = "Thats not a word Player " + (Player + 1) + " loses. The Game Restarts";
                 input.value = "";
                 input.textContent = "";
-                Player = 0;
+                Playertext.value = "Player " + (Player + 1) + " loses. It is "+ ((1-Player)+1) +" turn.";
+                Playertext.textContent = "Player " + (Player + 1) + " loses. It is "+ ((1-Player)+1) +" turn.";
+                Player = 1-Player;
             } else {
                 Player = 1 - Player;
-            }
+
             Playertext.value = "Player " + (Player + 1) + " turn";
-            Playertext.textContent = "Player " + (Player + 1) + " turn";
+            Playertext.textContent = "Player " + (Player + 1) + " turn";}
         }
     }
     xhttp.open("GET", "https://vtandale-testapp.herokuapp.com/Lab04/Ghost.php?query=" + currword, true);
