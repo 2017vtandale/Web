@@ -4,6 +4,7 @@ var Playertext = document.getElementById('Player');
 var Losingtext = document.getElementById('Losing-T');
 var numw;
 Playertext.value = "Player " + (Player + 1) + " turn";
+Playertext.textContent = "Player " + (Player + 1) + " turn";
 
 function Check() {
     var currword = input.value;
