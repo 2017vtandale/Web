@@ -41,6 +41,7 @@ function Check() {
 }
 
 function isAlphabet(e, t) {
+    console.log("I made it");
     try {
         if (window.event) {
             var charCode = window.event.keyCode;
@@ -49,15 +50,17 @@ function isAlphabet(e, t) {
         } else {
             return true;
         }
+        //console.log(charCode);
         if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123))
             return true;
-        else
-            input.textContent = oldcurrword;
+        else{
             input.value = oldcurrword;
+            input.textContent = currword;
             return false;
+        }
     } catch (err) {
         alert(err.Description);
     }
 }
-input.addEventListener("onkeydown", isAlphabet(event, this), false);
-input.addEventListener("input", Check, false);
+input.addEventListener("keypress", function() {isAlphabet(event, this)}, false);
+//input.addEventListener("input", Check, false);
