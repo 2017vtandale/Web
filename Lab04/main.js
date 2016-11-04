@@ -1,7 +1,7 @@
-var input  = Document.getElementById('Ghost-Play');
+var input  = document.getElementById('Ghost-Play');
 var Player = 0;
-var Playertext = Document.getElementById('Player');
-var Losingtext = Document.getElementById('Lose-T');
+var Playertext = document.getElementById('Player');
+var Losingtext = document.getElementById('Lose-T');
 Playertext.value = "Player "+ (Player+1)+" turn";
 function Check(){
   var currword = input.value;
