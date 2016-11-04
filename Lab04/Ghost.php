@@ -9,7 +9,7 @@ $check = preg_match_all($regex,$txtfile,$match);
 $check1 = preg_match($regex2,$txtfile,$match);
 // if($check1>0&&strlen($input)>3)
 //   $check = 0;
-if($check1&&strlen($input)<3)
+if($check1&&strlen($input)>3)
   $check = 0;
 echo ($check."\n");
 ?>
