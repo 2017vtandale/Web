@@ -9,6 +9,7 @@ function Check(){
   var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
+          console.log(numw);
           numw = this.responseText;
         }}
         xhttp.open("GET", "https://vtandale-testapp.herokuapp.com/Lab04/Ghost.php?query=" + input.value, true);
