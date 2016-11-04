@@ -17,11 +17,11 @@ function Check() {
             //console.log(numw === "0");
             if (numw < 1) {
                 console.log("L's");
-                Losingtext.textContent = "Thats not a word Player " + (Player + 1) + " loses. The Game Restarts";
+                Losingtext.textContent = "Player " + (Player + 1) + " loses. The Game Restarts";
                 input.value = "";
                 input.textContent = "";
-                Playertext.value = "\tPlayer " + (Player + 1) + " loses. It is Player "+ ((1-Player)+1) +" turn.";
-                Playertext.textContent = "\tPlayer " + (Player + 1) + " loses. It is "+ ((1-Player)+1) +" turn.";
+                Playertext.value = "Player "+ ((1-Player)+1) +" turn.";
+                Playertext.textContent = "Player "+ ((1-Player)+1) +" turn.";
                 Player = 1-Player;
             } else {
                 Player = 1 - Player;
