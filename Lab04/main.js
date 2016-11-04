@@ -4,12 +4,12 @@ var Playertext = document.getElementById('Player');
 var Losingtext = document.getElementById('Losing-T');
 var numw;
 var oldcurrword="";
-var currword="";
+var currword;
 Playertext.value = "Player " + (Player + 1) + " turn";
 Playertext.textContent = "Player " + (Player + 1) + " turn";
 
 function Check() {
-    var oldcurrword = currword;
+    //var oldcurrword = currword;
     var currword = input.value;
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -56,6 +56,10 @@ function isAlphabet(e, t) {
         else{
             input.value = oldcurrword;
             input.textContent = oldcurrword;
+            Player = 1-Player;
+            Losingtext.textContent = "The Game Restarts";
+            Playertext.value = "Player " + ( Player + 1) + " turn.";
+            Playertext.textContent = "Player " + (Player + 1) + " turn.";
             return false;
         }
     } catch (err) {
