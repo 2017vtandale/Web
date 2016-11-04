@@ -1,7 +1,7 @@
 var input = document.getElementById('Ghost-Play');
 var Player = 0;
 var Playertext = document.getElementById('Player');
-var Losingtext = document.getElementById('Lose-T');
+var Losingtext = document.getElementById('Losing-T');
 var numw;
 Playertext.value = "Player " + (Player + 1) + " turn";
 
@@ -14,7 +14,7 @@ function Check() {
             numw = this.responseText;
             console.log(numw);
             console.log(parseInt(numw));
-            console.log(numw === "0");
+            //console.log(numw === "0");
             if (numw < 1) {
                 console.log("L's");
                 Losingtext.value = "Thats not a word Player " + (Player + 1) + " loses. The Game Restarts";
