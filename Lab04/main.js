@@ -16,6 +16,7 @@ function Check(){
         xhttp.open("GET", "https://vtandale-testapp.herokuapp.com/Lab04/Ghost.php?query=" + currword, true);
         xhttp.send();
   var numw = parseInt(numw);
+  console.log(numw);
   if(numw===0){
     Losingtext.value = "Thats not a word Player "+(Player+1)+" loses. The Game Restarts";
     input.value = "";
