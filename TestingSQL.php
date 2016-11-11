@@ -26,7 +26,7 @@ ESCAPED;
 	//Add some data
 	$query = <<<ESCAPED
 		INSERT INTO Football VALUES(
-			Redskins, 4
+			"Redskins", 4
 		);
 ESCAPED;
 $ret = pg_query($query);
