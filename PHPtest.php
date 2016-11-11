@@ -8,7 +8,7 @@
 
   $query= "  CREATE TABLE football(TeamName varchar(255),NumberOfWins int)"
   echo $query;
-  $ret = pg_query($query);
+  $ret = pg_query($db,$query);
   if(!$ret)
   {
     echo("hi");
