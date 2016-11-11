@@ -18,6 +18,7 @@ ESCAPED;
   $ret = pg_query($query);
   if(!$ret)
   {
+    echo("hi");
     echo(pg_last_error($db));
   }
   else
