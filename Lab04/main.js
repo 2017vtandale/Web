@@ -54,12 +54,13 @@ function isAlphabet(e, t) {
         if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123))
             return true;
         else{
-            input.value = oldcurrword;
-            input.textContent = oldcurrword;
+            input.value = "";
+            input.textContent = "";
             Player = 1-Player;
             Losingtext.textContent = "The Game Restarts";
             Playertext.value = "Player " + ( Player + 1) + " turn.";
             Playertext.textContent = "Player " + (Player + 1) + " turn.";
+
             return false;
         }
     } catch (err) {
