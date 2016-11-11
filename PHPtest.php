@@ -14,6 +14,7 @@
     )
 
 ESCAPED;
+  echo $query;
   $ret = pg_query($query);
   if(!$ret)
   {
