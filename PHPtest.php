@@ -14,8 +14,8 @@
     )
 
 ESCAPED;
-  $ret = PE_query($query);
-  if($ret)
+  $ret = pg_query($query);
+  if(!$ret)
   (
     echo(pg_last_error($db));
   )
