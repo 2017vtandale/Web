@@ -1,10 +1,10 @@
 <?php
 	//instantiate our DB object
-	$host ="host=ec2-184-72-240-189.compute-1.amazonaws.com";
-	$dbname="dbname=dcneg2tjgbcblv";
-	$user ="user=qpqqhnjarylryo";
+	$host ="host=ec2-54-243-59-15.compute-1.amazonaws.com";
+	$dbname="dbname=d2p8qh6esl50d9";
+	$user ="user=umytqcshywmkvl";
 	$port ="port-5432";
-	$password ="password=hdGBdKUpo5ei2l5OGk-n0iFnMn";
+	$password ="password=-suxmkeL_GhbeXFKIlKzbxr1Kp";
 	$db = pg_connect($host." ".$dbname." ".$user." ".$port." ".$password);
 	//Create a table try/catch
 	$query = <<<ESCAPED
