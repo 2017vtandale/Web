@@ -6,7 +6,7 @@
   $password ="password=hdGBdKUpo5ei2l5OGk-n0iFnMn";
   $db = pg_connect($host." ".$dbname." ".$user." ".$port." ".$password);
 
-  $query= "  CREATE TABLE football(TeamName varchar(255),NumberOfWins int)"
+  $query= "  CREATE TABLE football(TeamName varchar(255),NumberOfWins int)";
   echo $query;
   $ret = pg_query($db,$query);
   if(!$ret)
