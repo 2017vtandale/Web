@@ -13,24 +13,24 @@ $db = pg_pconnect($connectstr,PGSQL_CONNECT_FORCE_NEW);
 //        echo($foodnames[$i].$prices[$i]);
 // }
 // }
-$query = "INSERT INTO tacobell VALUES('Chicken Soft Taco','1.79')";
-$ret = pg_query($query);
-if(!$ret){
-echo(pg_last_error($db));
-}
-else{
-echo("Chicken Soft Taco"."1.79");
-}
-// // $query = "CREATE TABLE tacobell(Item varchar(255),Price float)";
-// $ret = pg_query($query);
-// $query = "SELECT * FROM tacobell";
+// $query = "INSERT INTO tacobell VALUES('Chicken Soft Taco','1.79')";
 // $ret = pg_query($query);
 // if(!$ret){
 // echo(pg_last_error($db));
 // }
 // else{
-// while ($row = pg_fetch_row($ret)) {
-//     echo("Item:".$row[0]."Price".$row[1]);
-//     echo "<br />";
+// echo("Chicken Soft Taco"."1.79");
 // }
+// // $query = "CREATE TABLE tacobell(Item varchar(255),Price float)";
+// $ret = pg_query($query);
+$query = "SELECT * FROM tacobell";
+$ret = pg_query($query);
+if(!$ret){
+echo(pg_last_error($db));
+}
+else{
+while ($row = pg_fetch_row($ret)) {
+    echo("Item:".$row[0]."Price".$row[1]);
+    echo "<br />";
+}
 ?>
