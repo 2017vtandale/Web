@@ -19,7 +19,7 @@ if(!$ret){
 echo(pg_last_error($db));
 }
 else{
-echo($foodnames[$i].$prices[$i]);
+echo("Chicken Soft Taco"."1.79");
 }
 // // $query = "CREATE TABLE tacobell(Item varchar(255),Price float)";
 // $ret = pg_query($query);
