@@ -23,15 +23,15 @@ $db = pg_pconnect($connectstr,PGSQL_CONNECT_FORCE_NEW);
 // }
 // // $query = "CREATE TABLE tacobell(Item varchar(255),Price float)";
 // $ret = pg_query($query);
-$query = "SELECT * FROM tacobell";
-$ret = pg_query($query);
-if(!$ret){
-echo(pg_last_error($db));
-}
-else{
-while ($row = pg_fetch_row($ret)) {
-    echo("Item:".$row[0]."Price".$row[1]);
-    echo "<br />";
-}
-}
+// $query = "SELECT * FROM tacobell";
+// $ret = pg_query($query);
+// if(!$ret){
+// echo(pg_last_error($db));
+// }
+// else{
+// while ($row = pg_fetch_row($ret)) {
+//     echo("Item:".$row[0]."Price".$row[1]);
+//     echo "<br />";
+// }
+// }
 ?>
