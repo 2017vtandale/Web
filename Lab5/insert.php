@@ -4,7 +4,7 @@ $db = pg_connect($connectstr);
 
 $query= <<<ESCAPED
        CREATE TABLE Tacobell(
-          Itemname varchar(255), Price double
+          Itemname varchar(255), Price float
        )
 ESCAPED;
 
