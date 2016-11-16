@@ -4,18 +4,14 @@
   $user ="user=qpqqhnjarylryo";
   $port ="port-5432";
   $password ="password=hdGBdKUpo5ei2l5OGk-n0iFnMn";
-  $db = pg_connect($host." ".$dbname." ".$user." ".$port." ".$password);
+  $db = pg_connect($dbname." ".$host." ".$port." ".$user." ".$password."sslmode=requre");
+  $query = "INSERT INTO Football VALUES('Redskins', 4)";
+    $ret = pg_query($query);
+    if(!$ret){
+        echo(pg_last_error($db));
+    }
+    else{
+        echo("successfully added row");
+    }
 
-  $query= "  CREATE TABLE football(TeamName varchar(255),NumberOfWins int)";
-  echo $query;
-  $ret = pg_query($db,$query);
-  if(!$ret)
-  {
-    echo("hi");
-    echo(pg_last_error($db));
-  }
-  else
-  {
-  echo "it worked!!!";
-}
 ?>

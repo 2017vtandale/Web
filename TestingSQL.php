@@ -6,24 +6,10 @@
 	$port ="port-5432";
 	$password ="password=-suxmkeL_GhbeXFKIlKzbxr1Kp";
 	$connectstr =  "dbname=d2p8qh6esl50d9 host=ec2-54-243-59-15.compute-1.amazonaws.com port=5432 user=umytqcshywmkvl password=-suxmkeL_GhbeXFKIlKzbxr1Kp sslmode=require";
-	$db = pg_connect($connectstr,PGSQL_CONNECT_FORCE_NEW);
-	//Create a table try/catch
-	echo($db);
-	$query = "CREATE TABLE Football(TeamName varchar(255),NumberOfWins int)";
-	$ret = pg_query($query);
+	$db = pg_connect($connectstr);
 
-	if(!$ret){
-		echo(pg_last_error($db));
-	}
-	else{
-		echo "It worked!!!!";
-	}
-	//Add some data
-	$query = <<<ESCAPED
-		INSERT INTO Football VALUES(
-			Redskins, 4
-		);
-ESCAPED;
+
+$query="INSERT INTO Football VALUES('Redskins', 4)";
 $ret = pg_query($query);
 	if(!$ret)
 	{
