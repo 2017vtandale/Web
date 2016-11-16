@@ -5,10 +5,9 @@
 	$user ="user=umytqcshywmkvl";
 	$port ="port-5432";
 	$password ="password=-suxmkeL_GhbeXFKIlKzbxr1Kp";
-	$db = pg_connect($host." ".$dbname." ".$user." ".$port." ".$password);
+	$db = pg_connect($host." ".$dbname." ".$user." ".$port." ".$password,PGSQL_CONNECT_FORCE_NEW);
 	//Create a table try/catch
 	echo($db);
-	echo"I made it before query" ;
 	$query = "CREATE TABLE Football(TeamName varchar(255),NumberOfWins int)";
 	$ret = pg_query($query);
 
