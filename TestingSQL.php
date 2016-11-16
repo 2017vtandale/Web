@@ -15,13 +15,11 @@
 ESCAPED;
 	//$query = "CREATE TABLE Football(TeamName varchar(255),NumberOfWins int)"
 	$ret = pg_query($query);
-	echo($ret)
-	if(!$ret)
-	{
+	echo($ret);
+	if(!$ret){
 		echo(pg_last_error($db));
 	}
-	else
-	{
+	else{
 		echo "It worked!!!!";
 	}
 	//Add some data
