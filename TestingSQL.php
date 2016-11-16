@@ -9,8 +9,7 @@
 	$db = pg_connect($connectstr);
 
 
-$$query = "SELECT * FROM Football";
-
+$query = "SELECT * FROM Football";
 	$ret = pg_query($query);
 	if(!$ret){
 			echo(pg_last_error($db));
