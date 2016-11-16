@@ -7,15 +7,11 @@
 	$password ="password=-suxmkeL_GhbeXFKIlKzbxr1Kp";
 	$db = pg_connect($host." ".$dbname." ".$user." ".$port." ".$password);
 	//Create a table try/catch
-	$query = <<<ESCAPED
-		CREATE TABLE Football(
-			TeamName varchar(255),
-			NumberOfWins int
-		)
-ESCAPED;
-	//$query = "CREATE TABLE Football(TeamName varchar(255),NumberOfWins int)"
+	echo($db);
+	echo("I made it before query");
+	$query = "CREATE TABLE Football(TeamName varchar(255),NumberOfWins int)"
 	$ret = pg_query($query);
-	echo($ret);
+
 	if(!$ret){
 		echo(pg_last_error($db));
 	}
