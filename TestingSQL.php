@@ -9,15 +9,18 @@
 	$db = pg_connect($connectstr);
 
 
-$query="INSERT INTO Football VALUES('Redskins', 4)";
-$ret = pg_query($query);
-	if(!$ret)
-	{
-		echo(pg_last_error($db));
+$$query = "SELECT * FROM Football";
+
+	$ret = pg_query($query);
+	if(!$ret){
+			echo(pg_last_error($db));
 	}
-	else
-	{
-		echo "It worked!!!!";
+	else{
+			while ($row = pg_fetch_row($ret)) {
+					echo("Team:".$row[0]."Num of Wins:".$row[1]);
+					//echo "<br />\n";
+			}
+			echo("success");
 	}
 	//Query our table
 ?>
