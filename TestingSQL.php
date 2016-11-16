@@ -5,7 +5,7 @@
 	$user ="user=umytqcshywmkvl";
 	$port ="port-5432";
 	$password ="password=-suxmkeL_GhbeXFKIlKzbxr1Kp";
-	$db = pg_connect($host." ".$dbname." ".$user." ".$port." ".$password);
+	$db = pg_pconnect($host." ".$dbname." ".$user." ".$port." ".$password);
 	//Create a table try/catch
 	$query = <<<ESCAPED
 		CREATE TABLE Football(
