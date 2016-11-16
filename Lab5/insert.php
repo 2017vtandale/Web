@@ -1,4 +1,3 @@
-#!/usr/local/bin/php
 <?php
 $connectstr =  "dbname=d2p8qh6esl50d9 host=ec2-54-243-59-15.compute-1.amazonaws.com port=5432 user=umytqcshywmkvl password=-suxmkeL_GhbeXFKIlKzbxr1Kp sslmode=require";
 $db = pg_connect($connectstr);
@@ -9,6 +8,8 @@ $db = pg_connect($connectstr);
 //        $ret = pg_query($query);
 //        //echo($foodnames[$i].$prices[$i]);
 // }
+$query = "CREATE TABLE tacobell(Item varchar(255),Price float)";
+$ret = pg_query($query);
 $query = "SELECT * FROM tacobell";
 $ret = pg_query($query);
 if(!$ret){
