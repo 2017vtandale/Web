@@ -8,8 +8,8 @@
 	$db = pg_connect($host." ".$dbname." ".$user." ".$port." ".$password);
 	//Create a table try/catch
 	echo($db);
-	echo("I made it before query");
-	$query = "CREATE TABLE Football(TeamName varchar(255),NumberOfWins int)"
+	echo"I made it before query" ;
+	$query = "CREATE TABLE Football(TeamName varchar(255),NumberOfWins int)";
 	$ret = pg_query($query);
 
 	if(!$ret){
