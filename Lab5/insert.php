@@ -33,4 +33,5 @@ while ($row = pg_fetch_row($ret)) {
     echo("Item:".$row[0]."Price".$row[1]);
     echo "<br />";
 }
+}
 ?>
