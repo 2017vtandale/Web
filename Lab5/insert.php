@@ -20,6 +20,7 @@ echo(pg_last_error($db));
 }
 else{
 echo($foodnames[$i].$prices[$i]);
+}
 // // $query = "CREATE TABLE tacobell(Item varchar(255),Price float)";
 // $ret = pg_query($query);
 // $query = "SELECT * FROM tacobell";
