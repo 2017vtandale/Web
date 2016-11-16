@@ -13,7 +13,6 @@ $db = pg_pconnect($connectstr,PGSQL_CONNECT_FORCE_NEW);
 //        echo($foodnames[$i].$prices[$i]);
 // }
 // }
-echo "bump";
 $query = "INSERT INTO tacobell VALUES('Chicken Soft Taco','1.79')";
 $ret = pg_query($query);
 if(!$ret){
