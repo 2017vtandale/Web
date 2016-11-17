@@ -5,6 +5,6 @@ $itemname = str_replace("+"," ",htmlspecialchars($_POST["itemname"]));
 $price = htmlspecialchars($_POST["price"]);
 $query = "INSERT INTO tacobell VALUES('$itemname','$price')";
 $ret = pg_query($query);
-header("Location: http://example.com/myOtherPage.php");
+header("Location: https://vtandale-testapp.herokuapp.com/Lab5/index.html");
 die();
 ?>
