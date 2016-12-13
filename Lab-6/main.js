@@ -1,4 +1,4 @@
-
+var showbut = document.getElementById("submit");
 showbut.addEventListener("click", function(){
   console.log("I made it)");
   var xhttp = new XMLHttpRequest();
