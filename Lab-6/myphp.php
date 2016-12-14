@@ -9,7 +9,7 @@ $Access_Token_Secret =	"5BvsebycnDgu7shDncX9oDDRDPB5FP4o6czAm8fcALvwH";
 $connection = new TwitterOAuth($Consumer_Key, $Consumer_Secret, $Access_Token, $Access_Token_Secret);
 $content = $connection->get("account/verify_credentials");
 $term = $_REQUEST["term"];
-$tweets = $connection->get("search/tweets",["q"=>"harambe","result_type"=>"recent"]);
+$tweets = $connection->get("search/tweets",["q"=>$term,"result_type"=>"recent"]);
 //$array = json_decode($tweets=>"statuses",true);
 foreach($tweets as $key => $value) {
     echo sizeof($value);
