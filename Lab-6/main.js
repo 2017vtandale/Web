@@ -10,7 +10,7 @@ showbut.addEventListener("click", function(){
         if(val>100)
           val =100;
         document.getElementById('result').innerHTML = val;
-        console.log("I got the text");
+        
       }
     }
     xhttp.open("GET", "./myphp.php?query="+input.value, true);

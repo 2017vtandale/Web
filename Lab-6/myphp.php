@@ -9,7 +9,7 @@ $Access_Token_Secret =	"5BvsebycnDgu7shDncX9oDDRDPB5FP4o6czAm8fcALvwH";
 $connection = new TwitterOAuth($Consumer_Key, $Consumer_Secret, $Access_Token, $Access_Token_Secret);
 $content = $connection->get("account/verify_credentials");
 //$term = $_REQUEST["term"];
-$term = $_GET["query"]);
+$term = $_GET["query"];
 //readline_add_history($line);
 $tweets = $connection->get("search/tweets", ["q" => $term,"count"=>100,]);//$_GET["https://api.twitter.com/1.1/search/tweets.json?q=".$term];
 echo sizeof($tweets->statuses);
