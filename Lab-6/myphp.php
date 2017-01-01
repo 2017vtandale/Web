@@ -9,12 +9,12 @@ $Access_Token_Secret =	"5BvsebycnDgu7shDncX9oDDRDPB5FP4o6czAm8fcALvwH";
 $connection = new TwitterOAuth($Consumer_Key, $Consumer_Secret, $Access_Token, $Access_Token_Secret);
 $content = $connection->get("account/verify_credentials");
 //$term = $_REQUEST["term"];
-$term = readline();
+$term = $_GET["query"]);
 //readline_add_history($line);
-$tweets = $connection->get("search/tweets",["q"=>$term,"result_type"=>"recent"]);
-//$array = json_decode($tweets=>"statuses",true);
-//echo (var_dump($tweets));
-foreach($tweets as $key => $value) {
-    echo sizeof($value);
-}
+$tweets = $connection->get("search/tweets", ["q" => $term,"count"=>100,]);//$_GET["https://api.twitter.com/1.1/search/tweets.json?q=".$term];
+echo sizeof($tweets->statuses);
+// foreach($tweets->statuses as $tweet)
+// {
+//   echo "{$tweet->user->screen_name} {$tweet->text}\n";
+// }
 ?>

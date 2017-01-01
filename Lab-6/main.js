@@ -13,6 +13,6 @@ showbut.addEventListener("click", function(){
         console.log("I got the text");
       }
     }
-    xhttp.open("GET", "./myphp.php?term="+input.value, true);
+    xhttp.open("GET", "./myphp.php?query="+input.value, true);
     xhttp.send();
 },false);
